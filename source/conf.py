@@ -73,16 +73,16 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'symbol-docs'
-copyright = u'2018-present, NEM'
-author = u'NEM'
+project = u'firbolt-docs'
+copyright = u'2022, Firebolt Analytics'
+author = u'Firebolt'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = u'0.22.2'
+version = u'0.1'
 
 # The full version, including alpha/beta/rc tags.
 release = u'Main'
@@ -180,10 +180,10 @@ html_theme_options = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "resources/images/symbol-wordmark.svg"
+html_logo = "resources/images/firebolt-logo.svg"
 
 # Docs Title
-html_title = 'Symbol Documentation'
+html_title = 'Firebolt documentation'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -209,7 +209,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'symbol-docs'
+htmlhelp_basename = 'firebolt-docs'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -236,7 +236,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'symbol-docs.tex', u'Symbol Documentation',
+    (master_doc, 'firebolt-docs.tex', u'Firebolt documentation',
      u'nem', 'manual'),
 ]
 
@@ -246,7 +246,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'symbol-docs', u'Symbol Documentation',
+    (master_doc, 'firebolt-docs', u'Firebolt documentation',
      [author], 1)
 ]
 
@@ -257,8 +257,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'symbol-docs', u'Symbol Documentation',
-     author, 'symbol-docs', 'One line description of project.',
+    (master_doc, 'firebolt-docs', u'Firebolt documentation',
+     author, 'firebolt-docs', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -325,7 +325,7 @@ html_favicon = 'favicon.ico'
 
 # -- Options for edit on github -------------------------------------------
 
-edit_on_github_project = 'symbol/symbol-docs'
+edit_on_github_project = 'coreyp69/firebolt-docs'
 edit_on_github_branch = 'main'
 
 # -- Options for edit scaled images ---------------------------------------
@@ -366,15 +366,15 @@ def viewsource_resolve_link(file_path, language=None):
         language = 'typescript'
     if language == 'java':
         language = 'java/src/test/java/symbol/guides/examples'
-    base_url = 'https://github.com/symbol/symbol-docs/blob/main/source/resources/examples/%s/' % language
+    base_url = 'https://github.com/coreyp69/firebolt-docs/blob/main/source/resources/examples/%s/' % language
     path_split = file_path.split('/')
     path = "/".join(path_split[len(path_split)-2:])
     return base_url + path
 
 # -- Custom extlinks -----------------------------------------------------
 
-extlinks = {'schema': ('https://github.com/symbol/blob/main/catbuffer/schemas/symbol/%s', 'file '),
-            'properties': ('https://github.com/symbol/symbol/blob/main/client/catapult/resources/%s', 'file ')}
+extlinks = {'schema': ('https://github.com/coreyp69/blob/main/catbuffer/schemas/symbol/%s', 'file '),
+            'properties': ('https://github.com/corep69/coreyp69/blob/main/client/catapult/resources/%s', 'file ')}
 
 # -- Custom Pygments lexers ----------------------------------------------
 
