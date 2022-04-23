@@ -113,7 +113,7 @@ def what_build_am_i(app):
         token = os.getenv('GITHUB_ACCESS_TOKEN')
         if token:
             gh = Github(token)
-            gh_repo = gh.get_repo('symbol/symbol-docs')
+            gh_repo = gh.get_repo('coreyp69/firebolt-docs')
             gh_user_cache = {}
         else:
             raise errors.ExtensionError("Missing GITHUB_ACCESS_TOKEN environment variable.")
